@@ -46,10 +46,10 @@ export default function Add() {
       <main className="container mx-auto">
         <div>
           <h1 className="text-3xl text-gray-400 my-4 sm:ml-6">Criar Usuário</h1>
-          <form className="flex flex-col items-center p-4" action="">
+          <form className="flex flex-col items-center p-4">
             <input
               ref={nameRef}
-              className="w-[50%]  p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
+              className="lg:w-[50%] sm:w-full p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
               type="text"
               name="name"
               id=""
@@ -57,7 +57,7 @@ export default function Add() {
             />
             <input
               ref={emailRef}
-              className="w-[50%]  p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
+              className="lg:w-[50%] sm:w-full p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
               type="text"
               name="email"
               id=""
@@ -65,14 +65,14 @@ export default function Add() {
             />
             <input
               ref={roleRef}
-              className=" w-[50%]  p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
+              className=" lg:w-[50%] sm:w-full p-4 m-4 border-2 border-gray-500 bg-zinc-950 rounded"
               type="text"
               name="role"
               id=""
               placeholder="Digite o cargo"
             />
             <input
-              className="w-[50%] l p-4 m-4 bg-green-500 text-xl text-black rounded"
+              className="lg:w-[50%] sm:w-[80%] p-4 m-4 bg-green-500 text-xl text-black rounded"
               type="submit"
               value="Cadastrar"
               onClick={handleSubmit}

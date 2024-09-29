@@ -9,7 +9,7 @@ export default function Navbar() {
             <h1 className="font-bold text-2xl">usersApp</h1>
           </Link>
         </div>
-        <div className="links flex gap-6">
+        <div className="links flex gap-6 sm:mr-4">
           <div className="flex gap-2 items-center">
             <i className="ph-bold ph-user-plus"></i>
             <Link href={"/add"}>cadastrar</Link>

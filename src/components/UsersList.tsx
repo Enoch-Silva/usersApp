@@ -4,6 +4,13 @@ import UserItem from "./UserItem";
 
 import { usersApi, useGetAllUsersQuery } from "../features/api/apiSlice";
 
+type UserType = {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+};
+
 export default function UsersList() {
   const { data, isLoading } = useGetAllUsersQuery({});
 
@@ -12,7 +19,7 @@ export default function UsersList() {
   return (
     <main>
       <div className="container mx-auto">
-        {data?.map((user: any) => (
+        {data?.map((user: UserType) => (
           <UserItem key={user.id} user={user} />
         ))}
       </div>

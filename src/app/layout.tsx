@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>usersApp</title>
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
       </head>
       <body className={mainFontFamily.className}>
